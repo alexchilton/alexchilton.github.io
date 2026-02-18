@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1b2838;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg5)"/>
+
+  <!-- Ground line -->
+  <line x1="0" y1="270" x2="800" y2="270" stroke="#2a3f5f" stroke-width="2"/>
+
+  <!-- Knight (left) -->
+  <!-- Body -->
+  <rect x="100" y="180" width="40" height="55" rx="4" fill="#7f8c8d" stroke="#bdc3c7" stroke-width="2"/>
+  <!-- Head/helmet -->
+  <rect x="107" y="155" width="26" height="28" rx="4" fill="#95a5a6" stroke="#bdc3c7" stroke-width="2"/>
+  <!-- Visor slit -->
+  <rect x="111" y="163" width="18" height="5" rx="1" fill="#1a252f"/>
+  <!-- Shield -->
+  <path d="M80 185 L80 225 L95 240 L95 185 Z" fill="#2980b9" stroke="#3498db" stroke-width="2"/>
+  <!-- Cross on shield -->
+  <line x1="87" y1="193" x2="87" y2="225" stroke="#ecf0f1" stroke-width="2.5"/>
+  <line x1="80" y1="207" x2="95" y2="207" stroke="#ecf0f1" stroke-width="2.5"/>
+  <!-- Sword -->
+  <rect x="142" y="170" width="6" height="50" rx="1" fill="#bdc3c7" stroke="#95a5a6" stroke-width="1"/>
+  <rect x="136" y="192" width="18" height="5" rx="1" fill="#e67e22"/>
+  <!-- Legs -->
+  <rect x="103" y="233" width="14" height="28" rx="3" fill="#7f8c8d"/>
+  <rect x="122" y="233" width="14" height="28" rx="3" fill="#7f8c8d"/>
+  <!-- HP bar knight -->
+  <rect x="75" y="140" width="80" height="10" rx="3" fill="#2c3e50"/>
+  <rect x="75" y="140" width="72" height="10" rx="3" fill="#27ae60"/>
+  <text x="115" y="135" font-family="monospace" font-size="10" fill="#2ecc71" text-anchor="middle">Knight HP</text>
+
+  <!-- Bandit 1 (centre-right) -->
+  <rect x="350" y="185" width="36" height="50" rx="4" fill="#6d3a2a" stroke="#a0522d" stroke-width="2"/>
+  <circle cx="368" cy="173" r="16" fill="#8B4513" stroke="#a0522d" stroke-width="2"/>
+  <!-- Evil eyes -->
+  <circle cx="362" cy="170" r="3" fill="#c0392b"/>
+  <circle cx="374" cy="170" r="3" fill="#c0392b"/>
+  <!-- Dagger -->
+  <rect x="388" y="175" width="4" height="35" rx="1" fill="#95a5a6" transform="rotate(20,388,175)"/>
+  <!-- HP bar bandit 1 -->
+  <rect x="340" y="143" width="70" height="9" rx="3" fill="#2c3e50"/>
+  <rect x="340" y="143" width="40" height="9" rx="3" fill="#c0392b"/>
+  <text x="375" y="138" font-family="monospace" font-size="10" fill="#e74c3c" text-anchor="middle">Bandit 1</text>
+
+  <!-- Bandit 2 (far right) -->
+  <rect x="490" y="190" width="36" height="50" rx="4" fill="#5d3a1a" stroke="#8B4513" stroke-width="2"/>
+  <circle cx="508" cy="178" r="16" fill="#7B3F00" stroke="#8B4513" stroke-width="2"/>
+  <circle cx="502" cy="175" r="3" fill="#c0392b"/>
+  <circle cx="514" cy="175" r="3" fill="#c0392b"/>
+  <rect x="528" y="182" width="4" height="35" rx="1" fill="#95a5a6" transform="rotate(15,528,182)"/>
+  <!-- HP bar bandit 2 -->
+  <rect x="478" y="148" width="70" height="9" rx="3" fill="#2c3e50"/>
+  <rect x="478" y="148" width="22" height="9" rx="3" fill="#c0392b"/>
+  <text x="513" y="143" font-family="monospace" font-size="10" fill="#e74c3c" text-anchor="middle">Bandit 2</text>
+
+  <!-- Crossed swords effect in middle -->
+  <line x1="200" y1="200" x2="330" y2="240" stroke="#f39c12" stroke-width="3" opacity="0.6"/>
+  <line x1="330" y1="200" x2="200" y2="240" stroke="#f39c12" stroke-width="3" opacity="0.6"/>
+
+  <!-- Potion icons -->
+  <circle cx="160" cy="290" r="8" fill="#9b59b6"/>
+  <rect x="157" y="278" width="6" height="5" rx="1" fill="#8e44ad"/>
+  <circle cx="182" cy="290" r="8" fill="#9b59b6"/>
+  <rect x="179" y="278" width="6" height="5" rx="1" fill="#8e44ad"/>
+  <circle cx="204" cy="290" r="8" fill="#9b59b6"/>
+  <rect x="201" y="278" width="6" height="5" rx="1" fill="#8e44ad"/>
+  <text x="182" y="318" font-family="monospace" font-size="10" fill="#bb8fce" text-anchor="middle">3 potions</text>
+
+  <!-- RL algo labels (right panel) -->
+  <rect x="620" y="80" width="155" height="175" rx="8" fill="#1a2535" stroke="#2a3f5f" stroke-width="1.5"/>
+  <text x="697" y="103" font-family="monospace" font-size="12" font-weight="bold" fill="#f39c12" text-anchor="middle">RL Methods</text>
+  <text x="635" y="125" font-family="monospace" font-size="11" fill="#3498db">▸ DQN</text>
+  <text x="635" y="145" font-family="monospace" font-size="11" fill="#9b59b6">▸ GRU-DQN</text>
+  <text x="635" y="165" font-family="monospace" font-size="11" fill="#27ae60">▸ Q-Learning</text>
+  <text x="635" y="185" font-family="monospace" font-size="11" fill="#e74c3c">▸ Genetic Alg.</text>
+  <text x="635" y="210" font-family="monospace" font-size="10" fill="#7f8c8d">+ PyGame GUI</text>
+  <text x="635" y="228" font-family="monospace" font-size="10" fill="#7f8c8d">+ 3 environments</text>
+
+  <text x="400" y="338" font-family="monospace" font-size="13" fill="#5d8aa8" text-anchor="middle">PyTorch · Gymnasium · Stable Baselines 3 · PyGame</text>
+</svg>
