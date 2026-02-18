@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d2340;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="heatmap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   style="stop-color:#313695"/>
+      <stop offset="25%"  style="stop-color:#4575b4"/>
+      <stop offset="50%"  style="stop-color:#fee090"/>
+      <stop offset="75%"  style="stop-color:#f46d43"/>
+      <stop offset="100%" style="stop-color:#a50026"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg6)"/>
+
+  <!-- Protein chain (left) -->
+  <path d="M50 200 C70 170, 90 230, 110 200 C130 170, 150 230, 170 200 C190 170, 210 230, 230 200 C250 170, 270 230, 290 200"
+        fill="none" stroke="#5dade2" stroke-width="3" stroke-linecap="round"/>
+  <!-- Amino acid nodes on chain -->
+  <circle cx="50"  cy="200" r="9" fill="#2e86c1" stroke="#85c1e9" stroke-width="1.5"/>
+  <circle cx="110" cy="200" r="9" fill="#1a5276" stroke="#85c1e9" stroke-width="1.5"/>
+  <circle cx="170" cy="200" r="9" fill="#2e86c1" stroke="#85c1e9" stroke-width="1.5"/>
+  <circle cx="230" cy="200" r="9" fill="#1a5276" stroke="#85c1e9" stroke-width="1.5"/>
+  <circle cx="290" cy="200" r="9" fill="#2e86c1" stroke="#85c1e9" stroke-width="1.5"/>
+  <!-- Excipient molecules -->
+  <circle cx="80"  cy="140" r="14" fill="none" stroke="#a569bd" stroke-width="2"/>
+  <circle cx="80"  cy="140" r="6"  fill="#7d3c98" opacity="0.8"/>
+  <circle cx="150" cy="150" r="14" fill="none" stroke="#a569bd" stroke-width="2"/>
+  <circle cx="150" cy="150" r="6"  fill="#7d3c98" opacity="0.8"/>
+  <circle cx="200" cy="135" r="14" fill="none" stroke="#a569bd" stroke-width="2"/>
+  <circle cx="200" cy="135" r="6"  fill="#7d3c98" opacity="0.8"/>
+  <!-- Interaction dashed lines -->
+  <line x1="80"  y1="154" x2="90"  y2="191" stroke="#a569bd" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
+  <line x1="150" y1="164" x2="155" y2="191" stroke="#a569bd" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
+  <line x1="200" y1="149" x2="210" y2="191" stroke="#a569bd" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
+  <text x="170" y="275" font-family="monospace" font-size="11" fill="#5dade2" text-anchor="middle">Protein</text>
+  <text x="170" y="290" font-family="monospace" font-size="11" fill="#a569bd" text-anchor="middle">+ Excipients</text>
+
+  <!-- SHAP-style XAI bar chart (centre) -->
+  <text x="410" y="55" font-family="monospace" font-size="12" font-weight="bold" fill="#f0b27a" text-anchor="middle">SHAP Feature Importance</text>
+  <!-- Positive bars (red) -->
+  <rect x="370" y="68"  width="85" height="16" rx="2" fill="#e74c3c" opacity="0.85"/>
+  <rect x="370" y="89"  width="62" height="16" rx="2" fill="#e74c3c" opacity="0.75"/>
+  <rect x="370" y="110" width="44" height="16" rx="2" fill="#e74c3c" opacity="0.65"/>
+  <!-- Negative bars (blue) -->
+  <rect x="330" y="131" width="38" height="16" rx="2" fill="#3498db" opacity="0.75" transform="scale(-1,1) translate(-660,0)"/>
+  <rect x="330" y="152" width="24" height="16" rx="2" fill="#3498db" opacity="0.65" transform="scale(-1,1) translate(-660,0)"/>
+
+  <!-- Actually draw negative bars correctly -->
+  <rect x="285" y="131" width="38" height="16" rx="2" fill="#3498db" opacity="0.75"/>
+  <rect x="298" y="152" width="24" height="16" rx="2" fill="#3498db" opacity="0.65"/>
+
+  <!-- Feature labels -->
+  <text x="362" y="80"  font-family="monospace" font-size="10" fill="#f0b27a" text-anchor="end">pH</text>
+  <text x="362" y="101" font-family="monospace" font-size="10" fill="#f0b27a" text-anchor="end">Ionic strength</text>
+  <text x="362" y="122" font-family="monospace" font-size="10" fill="#f0b27a" text-anchor="end">Temp</text>
+  <text x="362" y="143" font-family="monospace" font-size="10" fill="#85c1e9" text-anchor="end">Conc.</text>
+  <text x="362" y="164" font-family="monospace" font-size="10" fill="#85c1e9" text-anchor="end">Excipient MW</text>
+  <!-- Centre line -->
+  <line x1="363" y1="62" x2="363" y2="172" stroke="#5d6d7e" stroke-width="1.5"/>
+
+  <!-- Mutual information heatmap (right) -->
+  <text x="620" y="55" font-family="monospace" font-size="12" font-weight="bold" fill="#f0b27a" text-anchor="middle">Mutual Information</text>
+  <!-- 5x5 heatmap grid -->
+  <rect x="520" y="65" width="30" height="30" rx="1" fill="#313695" opacity="0.9"/>
+  <rect x="553" y="65" width="30" height="30" rx="1" fill="#4575b4" opacity="0.9"/>
+  <rect x="586" y="65" width="30" height="30" rx="1" fill="#fee090" opacity="0.9"/>
+  <rect x="619" y="65" width="30" height="30" rx="1" fill="#f46d43" opacity="0.9"/>
+  <rect x="652" y="65" width="30" height="30" rx="1" fill="#a50026" opacity="0.9"/>
+
+  <rect x="520" y="98" width="30" height="30" rx="1" fill="#4575b4" opacity="0.9"/>
+  <rect x="553" y="98" width="30" height="30" rx="1" fill="#a50026" opacity="0.9"/>
+  <rect x="586" y="98" width="30" height="30" rx="1" fill="#f46d43" opacity="0.9"/>
+  <rect x="619" y="98" width="30" height="30" rx="1" fill="#313695" opacity="0.9"/>
+  <rect x="652" y="98" width="30" height="30" rx="1" fill="#fee090" opacity="0.9"/>
+
+  <rect x="520" y="131" width="30" height="30" rx="1" fill="#fee090" opacity="0.9"/>
+  <rect x="553" y="131" width="30" height="30" rx="1" fill="#f46d43" opacity="0.9"/>
+  <rect x="586" y="131" width="30" height="30" rx="1" fill="#a50026" opacity="0.9"/>
+  <rect x="619" y="131" width="30" height="30" rx="1" fill="#4575b4" opacity="0.9"/>
+  <rect x="652" y="131" width="30" height="30" rx="1" fill="#313695" opacity="0.9"/>
+
+  <rect x="520" y="164" width="30" height="30" rx="1" fill="#f46d43" opacity="0.9"/>
+  <rect x="553" y="164" width="30" height="30" rx="1" fill="#313695" opacity="0.9"/>
+  <rect x="619" y="164" width="30" height="30" rx="1" fill="#a50026" opacity="0.9"/>
+  <rect x="652" y="164" width="30" height="30" rx="1" fill="#fee090" opacity="0.9"/>
+  <rect x="586" y="164" width="30" height="30" rx="1" fill="#fee090" opacity="0.9"/>
+
+  <!-- Heatmap colourbar -->
+  <rect x="520" y="205" width="162" height="10" rx="2" fill="url(#heatmap)"/>
+  <text x="520" y="228" font-family="monospace" font-size="9" fill="#85929e">low</text>
+  <text x="674" y="228" font-family="monospace" font-size="9" fill="#85929e" text-anchor="end">high I(X;Y)</text>
+
+  <!-- In progress badge -->
+  <rect x="310" y="285" width="180" height="28" rx="14" fill="#1a472a" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="400" y="304" font-family="monospace" font-size="12" font-weight="bold" fill="#2ecc71" text-anchor="middle">⬤  In Progress</text>
+
+  <text x="400" y="338" font-family="monospace" font-size="12" fill="#5d8aa8" text-anchor="middle">XAI · SHAP · Information Theory · Python · Pharmaceutical ML</text>
+</svg>
