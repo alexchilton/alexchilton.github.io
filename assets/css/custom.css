@@ -82,6 +82,19 @@ body {
     margin-right: 15px;
 }
 
+/* Links in content sections — override default browser blue */
+.user-details a,
+.user-details-bis a {
+    color: #555;
+    text-decoration: underline;
+}
+
+.user-details a:hover,
+.user-details-bis a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
 /* Mathematical expressions */
 .sup {
     position: relative;
