@@ -95,23 +95,6 @@ body {
     text-decoration: underline;
 }
 
-/* Project entries */
-.project-entry {
-    max-width: 800px;
-    margin: 1.5em auto;
-    text-align: left;
-    padding: 0 20px;
-}
-
-.project-entry h3 {
-    display: inline;
-    margin-right: 12px;
-}
-
-.project-entry p {
-    margin-top: 0.6em;
-}
-
 /* Mathematical expressions */
 .sup {
     position: relative;

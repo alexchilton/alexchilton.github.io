@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#121213;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2a2d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg2)"/>
+  <!-- Wordle grid - 6 rows x 5 cols, centred left -->
+  <!-- Row 1 - all grey (wrong) -->
+  <rect x="80"  y="30" width="52" height="52" rx="3" fill="#818384"/>
+  <rect x="140" y="30" width="52" height="52" rx="3" fill="#818384"/>
+  <rect x="200" y="30" width="52" height="52" rx="3" fill="#818384"/>
+  <rect x="260" y="30" width="52" height="52" rx="3" fill="#818384"/>
+  <rect x="320" y="30" width="52" height="52" rx="3" fill="#b59f3b"/>
+  <text x="106"  y="67" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">C</text>
+  <text x="166" y="67" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">R</text>
+  <text x="226" y="67" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">A</text>
+  <text x="286" y="67" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">N</text>
+  <text x="346" y="67" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">E</text>
+  <!-- Row 2 -->
+  <rect x="80"  y="90" width="52" height="52" rx="3" fill="#6aaa64"/>
+  <rect x="140" y="90" width="52" height="52" rx="3" fill="#818384"/>
+  <rect x="200" y="90" width="52" height="52" rx="3" fill="#b59f3b"/>
+  <rect x="260" y="90" width="52" height="52" rx="3" fill="#818384"/>
+  <rect x="320" y="90" width="52" height="52" rx="3" fill="#6aaa64"/>
+  <text x="106"  y="127" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">S</text>
+  <text x="166" y="127" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">H</text>
+  <text x="226" y="127" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">O</text>
+  <text x="286" y="127" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">U</text>
+  <text x="346" y="127" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">T</text>
+  <!-- Row 3 - all green (solved) -->
+  <rect x="80"  y="150" width="52" height="52" rx="3" fill="#6aaa64"/>
+  <rect x="140" y="150" width="52" height="52" rx="3" fill="#6aaa64"/>
+  <rect x="200" y="150" width="52" height="52" rx="3" fill="#6aaa64"/>
+  <rect x="260" y="150" width="52" height="52" rx="3" fill="#6aaa64"/>
+  <rect x="320" y="150" width="52" height="52" rx="3" fill="#6aaa64"/>
+  <text x="106"  y="187" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">S</text>
+  <text x="166" y="187" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">L</text>
+  <text x="226" y="187" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">A</text>
+  <text x="286" y="187" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">T</text>
+  <text x="346" y="187" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">E</text>
+  <!-- Empty rows -->
+  <rect x="80"  y="210" width="52" height="52" rx="3" fill="none" stroke="#3a3a3c" stroke-width="2"/>
+  <rect x="140" y="210" width="52" height="52" rx="3" fill="none" stroke="#3a3a3c" stroke-width="2"/>
+  <rect x="200" y="210" width="52" height="52" rx="3" fill="none" stroke="#3a3a3c" stroke-width="2"/>
+  <rect x="260" y="210" width="52" height="52" rx="3" fill="none" stroke="#3a3a3c" stroke-width="2"/>
+  <rect x="320" y="210" width="52" height="52" rx="3" fill="none" stroke="#3a3a3c" stroke-width="2"/>
+  <!-- GRPO label right side -->
+  <text x="600" y="100" font-family="monospace" font-size="42" font-weight="bold" fill="#6aaa64" text-anchor="middle" opacity="0.9">GRPO</text>
+  <text x="600" y="140" font-family="monospace" font-size="16" fill="#818384" text-anchor="middle">Group Relative</text>
+  <text x="600" y="162" font-family="monospace" font-size="16" fill="#818384" text-anchor="middle">Policy Optimisation</text>
+  <!-- Reward curve -->
+  <polyline points="490,270 520,255 550,240 580,220 610,195 640,172 670,155 700,140 720,130" fill="none" stroke="#6aaa64" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <text x="600" y="310" font-family="monospace" font-size="13" fill="#818384" text-anchor="middle">Python · HuggingFace TRL · LoRA · Transformers</text>
+</svg>
