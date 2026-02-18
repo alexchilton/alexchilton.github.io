@@ -95,12 +95,40 @@ body {
     text-decoration: underline;
 }
 
-/* SVG icons in header (HuggingFace, Kaggle) — match FA icon sizing */
+/* SVG icons in header (Kaggle) — match FA icon sizing */
 .header-icons svg.icon {
     display: inline-block;
     vertical-align: middle;
     fill: currentColor;
     overflow: visible;
+}
+
+/* Image-wrapped icons (HuggingFace) — circle border matches FA icons */
+.header-icons a.icon-img-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.header-img-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: filter .5s;
+}
+
+.header-icons a.icon-img-wrap:hover .header-img-icon,
+.header-icons a.icon-img-wrap:active .header-img-icon {
+    filter: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-img-icon {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 /* Mathematical expressions */
