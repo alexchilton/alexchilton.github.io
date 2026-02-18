@@ -95,6 +95,14 @@ body {
     text-decoration: underline;
 }
 
+/* SVG icons in header (HuggingFace, Kaggle) — match FA icon sizing */
+.header-icons svg.icon {
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: visible;
+}
+
 /* Mathematical expressions */
 .sup {
     position: relative;
