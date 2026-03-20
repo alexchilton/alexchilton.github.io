@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg_ta" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1e2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a3348;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg_ta)"/>
+  <!-- Topic bubbles (BERTopic style clusters) -->
+  <circle cx="160" cy="130" r="55" fill="#1e4d6b" stroke="#3498db" stroke-width="2" opacity="0.8"/>
+  <text x="160" y="125" font-family="monospace" font-size="11" fill="#7eb3f5" text-anchor="middle">Topic 1</text>
+  <text x="160" y="140" font-family="monospace" font-size="10" fill="#7eb3f5" text-anchor="middle">politics</text>
+  <circle cx="290" cy="200" r="40" fill="#1a3d1a" stroke="#27ae60" stroke-width="2" opacity="0.8"/>
+  <text x="290" y="196" font-family="monospace" font-size="11" fill="#5ba85a" text-anchor="middle">Topic 2</text>
+  <text x="290" y="211" font-family="monospace" font-size="10" fill="#5ba85a" text-anchor="middle">sport</text>
+  <circle cx="240" cy="80" r="30" fill="#3d1a1a" stroke="#e74c3c" stroke-width="2" opacity="0.8"/>
+  <text x="240" y="76" font-family="monospace" font-size="10" fill="#e07b7b" text-anchor="middle">Topic 3</text>
+  <text x="240" y="90" font-family="monospace" font-size="10" fill="#e07b7b" text-anchor="middle">tech</text>
+  <circle cx="130" cy="240" r="35" fill="#2a1a3d" stroke="#9b59b6" stroke-width="2" opacity="0.8"/>
+  <text x="130" y="236" font-family="monospace" font-size="10" fill="#c97bff" text-anchor="middle">Topic 4</text>
+  <text x="130" y="250" font-family="monospace" font-size="10" fill="#c97bff" text-anchor="middle">culture</text>
+  <!-- Sentiment bar chart right -->
+  <rect x="430" y="60" width="280" height="200" rx="6" fill="#0f1e2e" stroke="#3498db" stroke-width="1" opacity="0.5"/>
+  <text x="570" y="85" font-family="monospace" font-size="12" fill="#7eb3f5" text-anchor="middle">Sentiment Distribution</text>
+  <!-- Positive bar -->
+  <rect x="455" y="110" width="170" height="22" rx="3" fill="#27ae60" opacity="0.85"/>
+  <text x="450" y="126" font-family="monospace" font-size="11" fill="#aaa" text-anchor="end">Positive</text>
+  <text x="635" y="126" font-family="monospace" font-size="11" fill="#5ba85a">68%</text>
+  <!-- Neutral bar -->
+  <rect x="455" y="145" width="90" height="22" rx="3" fill="#3498db" opacity="0.75"/>
+  <text x="450" y="161" font-family="monospace" font-size="11" fill="#aaa" text-anchor="end">Neutral</text>
+  <text x="555" y="161" font-family="monospace" font-size="11" fill="#7eb3f5">24%</text>
+  <!-- Negative bar -->
+  <rect x="455" y="180" width="30" height="22" rx="3" fill="#e74c3c" opacity="0.75"/>
+  <text x="450" y="196" font-family="monospace" font-size="11" fill="#aaa" text-anchor="end">Negative</text>
+  <text x="495" y="196" font-family="monospace" font-size="11" fill="#e07b7b">8%</text>
+  <!-- XLM-RoBERTa label -->
+  <text x="570" y="240" font-family="monospace" font-size="11" fill="#aaa" text-anchor="middle">XLM-RoBERTa · multilingual</text>
+  <text x="400" y="332" font-family="monospace" font-size="13" fill="#7eb3f5" text-anchor="middle" opacity="0.8">BERTopic · XLM-RoBERTa · FastAPI · React · OpenTelemetry</text>
+</svg>

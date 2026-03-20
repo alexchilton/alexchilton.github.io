@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg_dnd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1228;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d1a4a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg_dnd)"/>
+  <!-- D20 die -->
+  <polygon points="180,40 280,40 310,130 180,170 50,130" fill="none" stroke="#9b6dff" stroke-width="2.5" opacity="0.85"/>
+  <polygon points="180,40 310,130 180,170" fill="#2d1a4a" stroke="#9b6dff" stroke-width="1.5" opacity="0.7"/>
+  <polygon points="180,40 50,130 180,170" fill="#1a1228" stroke="#9b6dff" stroke-width="1.5" opacity="0.7"/>
+  <polygon points="50,130 180,170 100,230" fill="#2d1a4a" stroke="#9b6dff" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="310,130 180,170 260,230" fill="#1a1228" stroke="#9b6dff" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="100,230 180,170 260,230 180,290" fill="#2d1a4a" stroke="#9b6dff" stroke-width="2" opacity="0.8"/>
+  <text x="180" y="195" font-family="Arial Black,sans-serif" font-size="32" font-weight="900" fill="#9b6dff" text-anchor="middle" opacity="0.9">20</text>
+  <!-- RAG pipeline nodes right side -->
+  <circle cx="500" cy="80" r="28" fill="#2d1a4a" stroke="#7eb3f5" stroke-width="2"/>
+  <text x="500" y="86" font-family="monospace" font-size="11" fill="#7eb3f5" text-anchor="middle">ChromaDB</text>
+  <circle cx="620" cy="80" r="28" fill="#2d1a4a" stroke="#9b6dff" stroke-width="2"/>
+  <text x="620" y="86" font-family="monospace" font-size="11" fill="#9b6dff" text-anchor="middle">Ollama</text>
+  <circle cx="560" cy="180" r="28" fill="#2d1a4a" stroke="#c97bff" stroke-width="2"/>
+  <text x="560" y="178" font-family="monospace" font-size="10" fill="#c97bff" text-anchor="middle">HuggingFace</text>
+  <text x="560" y="192" font-family="monospace" font-size="10" fill="#c97bff" text-anchor="middle">LLM</text>
+  <circle cx="560" cy="270" r="28" fill="#2d1a4a" stroke="#5ba85a" stroke-width="2"/>
+  <text x="560" y="268" font-family="monospace" font-size="10" fill="#5ba85a" text-anchor="middle">Game</text>
+  <text x="560" y="282" font-family="monospace" font-size="10" fill="#5ba85a" text-anchor="middle">Engine</text>
+  <line x1="500" y1="108" x2="535" y2="155" stroke="#7eb3f5" stroke-width="1.5" opacity="0.6"/>
+  <line x1="620" y1="108" x2="585" y2="155" stroke="#9b6dff" stroke-width="1.5" opacity="0.6"/>
+  <line x1="560" y1="208" x2="560" y2="242" stroke="#c97bff" stroke-width="1.5" opacity="0.6"/>
+  <!-- Stars -->
+  <circle cx="420" cy="50" r="2" fill="#9b6dff" opacity="0.7"/>
+  <circle cx="680" cy="150" r="2" fill="#7eb3f5" opacity="0.7"/>
+  <circle cx="740" cy="60" r="1.5" fill="#9b6dff" opacity="0.5"/>
+  <circle cx="450" cy="300" r="1.5" fill="#5ba85a" opacity="0.5"/>
+  <text x="400" y="332" font-family="monospace" font-size="13" fill="#9b6dff" text-anchor="middle" opacity="0.8">Python · RAG · ChromaDB · Ollama · HuggingFace · Docker · 139 tests</text>
+</svg>

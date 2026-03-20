@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg_math" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14101e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1830;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg_math)"/>
+  <!-- Mathematical symbols scattered as background -->
+  <text x="40"  y="80"  font-family="serif" font-size="28" fill="#3a2a5a" opacity="0.7">∫</text>
+  <text x="100" y="50"  font-family="serif" font-size="22" fill="#2a3a5a" opacity="0.6">∇</text>
+  <text x="680" y="60"  font-family="serif" font-size="26" fill="#3a2a5a" opacity="0.5">∂</text>
+  <text x="740" y="120" font-family="serif" font-size="20" fill="#2a3a5a" opacity="0.5">Σ</text>
+  <text x="50"  y="290" font-family="serif" font-size="24" fill="#3a2a5a" opacity="0.5">μ</text>
+  <text x="720" y="280" font-family="serif" font-size="22" fill="#2a3a5a" opacity="0.5">λ</text>
+  <!-- Notebook progression -->
+  <rect x="60" y="50" width="640" height="40" rx="5" fill="#1e1830" stroke="#7eb3f5" stroke-width="1"/>
+  <text x="80" y="75" font-family="monospace" font-size="12" fill="#7eb3f5">01  Statistical Estimation · MLE · MAP · Bayesian Inference</text>
+  <rect x="60" y="98" width="640" height="40" rx="5" fill="#1e1830" stroke="#9b59b6" stroke-width="1"/>
+  <text x="80" y="123" font-family="monospace" font-size="12" fill="#c97bff">02  Measure Theory · σ-algebras · Lebesgue Integration</text>
+  <rect x="60" y="146" width="640" height="40" rx="5" fill="#1e1830" stroke="#27ae60" stroke-width="1"/>
+  <text x="80" y="171" font-family="monospace" font-size="12" fill="#5ba85a">03  Variational Calculus · Euler–Lagrange · Functionals</text>
+  <rect x="60" y="194" width="640" height="40" rx="5" fill="#1e1830" stroke="#3498db" stroke-width="1"/>
+  <text x="80" y="219" font-family="monospace" font-size="12" fill="#7eb3f5">04  Matrix Calculus · Hessians · Jacobians · Backprop</text>
+  <rect x="60" y="242" width="640" height="40" rx="5" fill="#1e1830" stroke="#e8c53a" stroke-width="1"/>
+  <text x="80" y="267" font-family="monospace" font-size="12" fill="#e8c53a">05  Quantum Mechanics · General Relativity · GR tensors</text>
+  <!-- Arrow showing progression -->
+  <line x1="730" y1="70" x2="730" y2="262" stroke="#5a4a7a" stroke-width="2" stroke-dasharray="5,4"/>
+  <polygon points="724,262 730,276 736,262" fill="#5a4a7a"/>
+  <text x="400" y="332" font-family="monospace" font-size="13" fill="#9b59b6" text-anchor="middle" opacity="0.8">Python · NumPy · SymPy · Jupyter · Mathematical Physics</text>
+</svg>

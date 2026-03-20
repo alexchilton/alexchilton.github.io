@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg_hct" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#12181a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2830;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg_hct)"/>
+  <!-- Kaplan-Meier style survival curves -->
+  <text x="80" y="40" font-family="monospace" font-size="13" fill="#aaa">Survival Probability</text>
+  <!-- Axes -->
+  <line x1="80" y1="280" x2="420" y2="280" stroke="#3a4a50" stroke-width="1.5"/>
+  <line x1="80" y1="50" x2="80" y2="280" stroke="#3a4a50" stroke-width="1.5"/>
+  <text x="250" y="300" font-family="monospace" font-size="11" fill="#5a7a7a" text-anchor="middle">Days post-HCT</text>
+  <!-- Y axis ticks -->
+  <text x="70" y="54" font-family="monospace" font-size="10" fill="#5a7a7a" text-anchor="end">1.0</text>
+  <text x="70" y="122" font-family="monospace" font-size="10" fill="#5a7a7a" text-anchor="end">0.7</text>
+  <text x="70" y="190" font-family="monospace" font-size="10" fill="#5a7a7a" text-anchor="end">0.4</text>
+  <text x="70" y="258" font-family="monospace" font-size="10" fill="#5a7a7a" text-anchor="end">0.1</text>
+  <!-- Survival curve group 1 (better) -->
+  <polyline points="80,54 120,54 120,80 160,80 160,95 200,95 200,110 240,110 240,130 280,130 280,155 320,155 320,180 360,180 360,200 400,200 400,215 420,215"
+            fill="none" stroke="#27ae60" stroke-width="2.5" opacity="0.9"/>
+  <!-- Survival curve group 2 (worse) -->
+  <polyline points="80,54 100,54 100,90 140,90 140,120 180,120 180,155 220,155 220,195 260,195 260,230 300,230 300,255 340,255 340,268 400,268"
+            fill="none" stroke="#e74c3c" stroke-width="2.5" opacity="0.9"/>
+  <!-- Legend -->
+  <line x1="90" y1="320" x2="115" y2="320" stroke="#27ae60" stroke-width="2.5"/>
+  <text x="120" y="324" font-family="monospace" font-size="11" fill="#5ba85a">Group A</text>
+  <line x1="190" y1="320" x2="215" y2="320" stroke="#e74c3c" stroke-width="2.5"/>
+  <text x="220" y="324" font-family="monospace" font-size="11" fill="#e07b7b">Group B</text>
+  <!-- XGBoost + equity panel -->
+  <rect x="450" y="50" width="300" height="200" rx="8" fill="#12181a" stroke="#1abc9c" stroke-width="1.5" opacity="0.8"/>
+  <text x="600" y="78" font-family="monospace" font-size="13" fill="#1abc9c" text-anchor="middle">Equity-Aware Model</text>
+  <text x="470" y="110" font-family="monospace" font-size="11" fill="#aaa">CV C-Index:</text>
+  <text x="620" y="110" font-family="monospace" font-size="13" fill="#27ae60">0.6766</text>
+  <text x="470" y="135" font-family="monospace" font-size="11" fill="#aaa">Custom metric:</text>
+  <text x="620" y="135" font-family="monospace" font-size="11" fill="#1abc9c">C-Index − disparity</text>
+  <text x="470" y="160" font-family="monospace" font-size="11" fill="#aaa">Penalises racial</text>
+  <text x="470" y="178" font-family="monospace" font-size="11" fill="#aaa">group disparity</text>
+  <text x="470" y="210" font-family="monospace" font-size="11" fill="#5a7a7a">XGBoost · Kaggle HCT comp</text>
+  <text x="400" y="332" font-family="monospace" font-size="13" fill="#1abc9c" text-anchor="middle" opacity="0.8">Python · XGBoost · Survival Analysis · Equity · Kaggle</text>
+</svg>
